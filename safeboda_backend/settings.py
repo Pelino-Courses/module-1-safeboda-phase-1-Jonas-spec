@@ -121,3 +121,14 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+django.contrib.admin,
+    django.contrib.auth, # type: ignore
+    django.contrib.contenttypes,
+    django.contrib.sessions,
+    django.contrib.messages,
+    django.contrib.staticfiles,
+    # --- New/Required additions ---
+    rest_framework,  # Registers Django Rest Framework
+    api,             # Registers your new 'api' application
+    # ------------------------------
